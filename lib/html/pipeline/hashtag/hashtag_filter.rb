@@ -14,7 +14,7 @@ module HTML
     #                      indentify hashtags
     #   :tag_link_attr - HTML attributes for the link that will be generated
     #
-    class HashtagFilter < Filter
+    class HashtagFilter < HTMLPipeline::Filter
       def self.hashtags_in(text, hashtag_pattern = HashtagPattern)
         text.gsub hashtag_pattern do |match|
           tag = $1
