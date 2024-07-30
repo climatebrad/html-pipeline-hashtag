@@ -1,6 +1,6 @@
 require 'set'
 
-require 'html/pipeline'
+require 'html-pipeline'
 
 module HTML
   class Pipeline
